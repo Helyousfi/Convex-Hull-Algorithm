@@ -13,11 +13,13 @@ int ConvexHull::distanceSquared(const Point& p1, const Point& p2) {
 }
 
 std::vector<Point> ConvexHull::grahamScan(std::vector<Point>& points) {
+    // Get the size of points and if it's lesser than 3 return hull
     int n = points.size();
     std::vector<Point> hull;
 
     if (n < 3) return hull;
 
+    // Determine the point that has the least y
     int ymin = points[0].y, min = 0;
     for (int i = 1; i < n; i++) {
         int y = points[i].y;
