@@ -13,7 +13,7 @@ include_directories(src-smfl/include)
 link_directories(src-smfl/lib)
 
 # Add executable
-add_executable(convex_hull src/main.cpp src/point.cpp src/convex_hull.cpp)
+add_executable(convex_hull app/main.cpp src/point.cpp src/convex_hull.cpp)
 
 # Link SFML libraries
 target_link_libraries(convex_hull sfml-graphics sfml-window sfml-system)
