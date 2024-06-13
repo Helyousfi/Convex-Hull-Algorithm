@@ -21,7 +21,7 @@ Output: A list of points representing the vertices of the convex hull in counter
     a. While the turn formed by the top two points of S and p makes a non-left turn (not counter-clockwise):
         i. Pop the top point from S.
     b. Push p onto S.
-6. The stack S contains the vertices of the convex hull in counter-clockwise order.```
+6. The stack S contains the vertices of the convex hull in counter-clockwise order.
 
 To compile the project:
 
